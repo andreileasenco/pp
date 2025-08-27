@@ -1612,3 +1612,15 @@ button {
         max-width: 100%;
     }
 }
+
+/* Service card category */
+.service-category {
+    font-size: 13px;
+    color: #777777;
+}
+
+/* Task card category */
+.task-category {
+    font-size: 13px;
+    color: #777777;
+}
