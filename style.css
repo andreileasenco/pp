@@ -1552,6 +1552,13 @@ button {
         flex: 0 0 calc((100% - 40px) / 3);
         max-width: calc((100% - 40px) / 3);
     }
+
+    /* Sections that previously displayed 4 cards: adjust to 4 per view */
+    .news-cards.carousel-track > .news-card,
+    .jobs-list.carousel-track > .job-card {
+        flex: 0 0 calc((100% - 60px) / 4);
+        max-width: calc((100% - 60px) / 4);
+    }
 }
 @media (max-width: 992px) and (min-width: 601px) {
     .afisha-cards.carousel-track > .afisha-card,
