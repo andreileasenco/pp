@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home</title>
         <link rel="stylesheet" href="style.css" />
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
     </head>
     <body>
         <header class="site-header">
@@ -16,6 +16,11 @@
                 <div class="ad-slot" role="img" aria-label="Advertisement 728x90">
                     728×90
                 </div>
+                <button class="hamburger" id="hamburger" aria-label="Открыть меню" aria-controls="mobile-menu" aria-expanded="false">
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                    <span class="hamburger__bar"></span>
+                </button>
             </div>
             <nav class="container bottom-row" aria-label="Primary navigation">
                 <ul class="menu menu--left">
@@ -30,6 +35,24 @@
                     <li id="mega-menu-item-25"><a href="#">Вход и регистрация</a></li>
                 </ul>
             </nav>
+
+            <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+                <div class="mobile-menu__panel">
+                    <button class="mobile-menu__close" id="mobile-menu-close" aria-label="Закрыть меню">✕</button>
+                    <nav class="mobile-menu__nav" aria-label="Мобильное меню">
+                        <ul class="mobile-menu__list">
+                            <li><a href="#">Афиша</a></li>
+                            <li><a href="#">Работа</a></li>
+                            <li><a href="#">Объявления</a></li>
+                            <li><a href="#">Специалисты и услуги</a></li>
+                            <li><a href="#">Биржа заказов</a></li>
+                            <li><a href="#">Бизнес-новости</a></li>
+                            <li class="mobile-menu__divider"></li>
+                            <li><a href="#">Вход и регистрация</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </header>
 
         <footer class="footer">
