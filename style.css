@@ -582,3 +582,165 @@ body {
     background-position: center;
     background-size: contain;
 }
+
+/* Footer */
+.footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 40px 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    border-top: 1px solid #e6e6e6;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-col {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-col--logo p {
+    color: var(--Text-footer-color, rgba(0, 0, 0, 0.56));
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.028px;
+}
+
+.footer-logo {
+    max-width: 236px;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    padding-bottom: 3px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 6px;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #dddddd;
+    padding-top: 10px;
+}
+
+/* Footer titles per spec */
+.footer h4 {
+    color: var(--Title-footer-color, rgba(0, 0, 0, 0.88));
+    font-family: "SF Pro Display";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.036px;
+    text-transform: uppercase;
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+/* Decorative line under footer titles */
+.footer h4::after {
+    content: "";
+    display: block;
+    margin-top: 15px;
+    width: 100%;
+    height: 2.84px;
+    width: 26.46px;
+    background-image: url("img/line.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+}
+
+.footer-col--contacts p {
+    color: var(--Text-footer-color, rgba(0, 0, 0, 0.56));
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.028px;
+}
+
+.footer-col--contacts a[href^="mailto:"] {
+    color: var(--Links-footer-color, rgba(0, 0, 0, 0.72));
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.028px;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.footer-col--links a {
+    color: var(--Links-footer-color, rgba(0, 0, 0, 0.72));
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.028px;
+    text-decoration: none;
+}
+
+/* Override generic footer link styles for links column */
+.footer .footer-col--links ul li a {
+    color: var(--Links-footer-color, rgba(0, 0, 0, 0.72));
+    font-family: "SF Pro Display";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.028px;
+    text-decoration: none;
+}
