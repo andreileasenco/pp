@@ -1037,6 +1037,7 @@ button {
 .afisha-card__desc {
     font-size: 14px;
     color: #555555;
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1309,6 +1310,15 @@ button {
 .info__icon--calendar {
     background-image: url("img/calendar.svg");
 }
+.info__icon--phone {
+    background-image: url("img/phone.svg");
+}
+.info__icon--mail {
+    background-image: url("img/mail.svg");
+}
+.info__icon--web {
+    background-image: url("img/link.svg");
+}
 
 @media (max-width: 992px) {
     .ad-card {
@@ -1560,6 +1570,25 @@ button {
         max-width: calc((100% - 60px) / 4);
     }
 }
+
+/* Job card contact rows */
+.job-card .contact {
+    font-size: 14px;
+    color: #555555;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.contact__icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.contact__icon--phone { background-image: url("img/phone.svg"); }
+.contact__icon--mail { background-image: url("img/mail.svg"); }
 @media (max-width: 992px) and (min-width: 601px) {
     .afisha-cards.carousel-track > .afisha-card,
     .news-cards.carousel-track > .news-card,
