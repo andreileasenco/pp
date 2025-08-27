@@ -981,3 +981,509 @@ button {
         transition: none !important;
     }
 }
+
+.afisha {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.afisha-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.afisha-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+.afisha-view-all {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+}
+.afisha-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.afisha-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 320px;
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+.afisha-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.afisha-card__content {
+    padding: 15px;
+}
+.afisha-card__meta {
+    font-size: 14px;
+    color: #777777;
+    margin-bottom: 10px;
+}
+.afisha-card__title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.afisha-card__desc {
+    font-size: 14px;
+    color: #555555;
+}
+
+@media (max-width: 768px) {
+    .afisha {
+        padding: 24px 0 16px;
+    }
+    .afisha-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.news {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.news-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+.news-header h2 {
+    margin: 0;
+    font-size: 28px;
+}
+.news-header-left {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.news-post {
+    color: #f14a4a;
+    text-decoration: none;
+    font-size: 14px;
+}
+.news-header-right .news-view-all {
+    text-decoration: none;
+    color: #555555;
+    font-size: 14px;
+}
+.news-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.news-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
+    display: flex;
+    flex-direction: column;
+}
+.news-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.news-card__content {
+    padding: 15px;
+}
+.news-card__date {
+    font-size: 13px;
+    color: #777777;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.news-card__date::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url("img/calendar.svg") no-repeat center / contain;
+}
+.news-card__title {
+    font-size: 16px;
+    margin: 10px 0;
+}
+.news-card__desc {
+    font-size: 14px;
+    color: #555555;
+}
+
+@media (max-width: 992px) {
+    .news-card {
+        flex: 1 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .news-card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
+
+.jobs {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.jobs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.jobs-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.jobs-view-all {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+.jobs-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.job-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(25% - 20px);
+    min-width: 250px;
+    box-sizing: border-box;
+}
+.job-card h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+}
+.job-card .company {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.job-card .salary {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.job-card .description {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.job-card .date {
+    font-size: 13px;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.job-card .date__icon {
+    width: 16px;
+    height: 16px;
+    background: url("img/calendar.svg") no-repeat center / contain;
+    display: inline-block;
+}
+
+@media (min-width: 993px) {
+    .jobs-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .job-card {
+        flex: 0 0 calc(25% - 15px);
+        max-width: calc(25% - 15px);
+    }
+}
+
+@media (max-width: 992px) {
+    .job-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .job-card {
+        flex: 1 1 100%;
+    }
+}
+
+.ads {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.ads-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.ads-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.ads-view-all {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+.ads-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.ad-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.ad-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.ad-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.category {
+    font-size: 13px;
+    color: #777777;
+}
+.title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.description {
+    font-size: 14px;
+    color: #555555;
+}
+.info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #777777;
+}
+.info__icon {
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.info__icon--location {
+    background-image: url("img/pin.svg");
+}
+.info__icon--calendar {
+    background-image: url("img/calendar.svg");
+}
+
+@media (max-width: 992px) {
+    .ad-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 600px) {
+    .ad-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+.services {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.services-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.services-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.services-view-all {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+.services-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.service-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.service-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.service-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.service-content .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.service-content .price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.service-content .description {
+    font-size: 14px;
+    color: #555555;
+}
+.service-content .info {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: #777777;
+}
+
+@media (max-width: 992px) {
+    .service-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+@media (max-width: 600px) {
+    .service-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
+
+.tasks {
+    padding: 32px 0 24px;
+    background: #f9f9f9;
+}
+.tasks-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.tasks-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.tasks-view-all {
+    color: #555555;
+    text-decoration: none;
+    font-size: 14px;
+}
+.tasks-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.task-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(33.333% - 20px);
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.task-card .title {
+    font-size: 18px;
+    font-weight: 700;
+}
+.task-card .price {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 5px 0;
+}
+.task-card .description {
+    font-size: 14px;
+    color: #555555;
+}
+.task-card .date {
+    font-size: 13px;
+    color: #777777;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.task-card .date .date__icon {
+    width: 16px;
+    height: 16px;
+    background: url("img/calendar.svg") no-repeat center / contain;
+    display: inline-block;
+}
+
+@media (min-width: 993px) {
+    .tasks-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .task-card {
+        box-sizing: border-box;
+        min-width: 0;
+        flex: 0 0 calc((100% - 40px) / 3); /* 3 cards, 2 gaps of 20px */
+        max-width: calc((100% - 40px) / 3);
+    }
+}
+
+@media (max-width: 992px) {
+    .task-card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .task-card {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
+}
