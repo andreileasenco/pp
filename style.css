@@ -1016,7 +1016,7 @@ button {
     max-width: 360px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
 }
 .afisha-card img {
     width: 100%;
@@ -1024,21 +1024,22 @@ button {
     object-fit: cover;
 }
 .afisha-card__content {
-    padding: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .afisha-card__meta {
     font-size: 14px;
     color: #777777;
-    margin-bottom: 10px;
 }
 .afisha-card__title {
     font-size: 18px;
-    margin: 10px 0;
+
 }
 .afisha-card__desc {
     font-size: 14px;
     color: #555555;
-    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
@@ -1101,12 +1102,14 @@ button {
     object-fit: cover;
 }
 .news-card__content {
-    padding: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .news-card__date {
     font-size: 13px;
     color: #777777;
-    margin-bottom: 8px;
     display: flex;
     align-items: center;
     gap: 6px;
@@ -1120,7 +1123,6 @@ button {
 }
 .news-card__title {
     font-size: 16px;
-    margin: 10px 0;
 }
 .news-card__desc {
     font-size: 14px;
@@ -1173,6 +1175,9 @@ button {
     flex: 1 1 calc(25% - 20px);
     min-width: 250px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .job-card h3 {
     margin: 0 0 5px;
@@ -1181,15 +1186,12 @@ button {
 .job-card .company {
     color: #666666;
     font-size: 14px;
-    margin-bottom: 10px;
 }
 .job-card .salary {
     font-weight: 700;
-    margin-bottom: 10px;
 }
 .job-card .description {
     font-size: 14px;
-    margin-bottom: 15px;
 }
 .job-card .date {
     font-size: 13px;
@@ -1204,6 +1206,7 @@ button {
     background: url("img/calendar.svg") no-repeat center / contain;
     display: inline-block;
 }
+
 
 @media (min-width: 993px) {
     .jobs-list {
@@ -1268,10 +1271,10 @@ button {
     object-fit: cover;
 }
 .ad-content {
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 .category {
     font-size: 13px;
@@ -1297,6 +1300,7 @@ button {
     font-size: 13px;
     color: #777777;
 }
+
 .info__icon {
     width: 14px;
     height: 14px;
@@ -1373,10 +1377,10 @@ button {
     object-fit: cover;
 }
 .service-content {
-    padding: 16px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
 }
 .service-content .title {
     font-size: 18px;
